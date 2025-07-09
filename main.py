@@ -11,6 +11,16 @@ menu = {
 }
 
 st.set_page_config(page_title="TikTok_V486", layout="wide")
+st.markdown("""
+    <style>
+    section[data-testid="stSidebar"] {
+        background-color: #000066;
+    }
+    section[data-testid="stSidebar"] .css-ng1t4o, section[data-testid="stSidebar"] .css-1v3fvcr {
+        color: #ffffff;
+    }
+    </style>
+""", unsafe_allow_html=True)
 
 st.sidebar.title("TIKTOK VIEW")
 selection = st.sidebar.radio("Chọn mục:", list(menu.keys()))
