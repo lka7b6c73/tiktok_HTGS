@@ -17,11 +17,12 @@ st.set_page_config(
     layout="wide"
 )
 
-st.sidebar.image(
-    "https://static.vecteezy.com/system/resources/previews/018/930/574/non_2x/tiktok-logo-tikok-icon-transparent-tikok-app-logo-free-png.png",
-    use_container_width=True
-)
-st.sidebar.title("TIKTOK VIEW")
+st.sidebar.markdown(f"""
+<div style="display: flex; align-items: center; gap: 10px;">
+    <img src="https://static.vecteezy.com/system/resources/previews/018/930/574/non_2x/tiktok-logo-tikok-icon-transparent-tikok-app-logo-free-png.png" width="30">
+    <h3 style="margin:0;">TIKTOK VIEW</h3>
+</div>
+""", unsafe_allow_html=True)
 selection = st.sidebar.radio("Chọn mục:", list(menu.keys()))
 
 filename = menu[selection]
