@@ -18,10 +18,9 @@ selection = st.sidebar.radio("Chọn mục:", list(menu.keys()))
 filename = menu[selection]
 
 # Gọi API
-st.write(f"## {selection}")
 response = requests.get(f"{BACKEND_URL}/image/{filename}")
 
 if response.status_code == 200:
-    st.image(response.content, use_column_width=True)
+    st.image(response.content, use_container_width=True)
 else:
     st.error(f"Không tải được ảnh: {response.status_code}")
