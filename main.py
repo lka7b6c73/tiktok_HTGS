@@ -10,8 +10,17 @@ menu = {
     "Kho dữ liệu Tiktok": "feeds.png"
 }
 
-st.set_page_config(page_title="TikTok_V486", layout="wide")
 
+st.set_page_config(
+    page_title="TikTok V486",
+    page_icon="https://static.vecteezy.com/system/resources/previews/018/930/574/non_2x/tiktok-logo-tikok-icon-transparent-tikok-app-logo-free-png.png",
+    layout="wide"
+)
+
+st.sidebar.image(
+    "https://static.vecteezy.com/system/resources/previews/018/930/574/non_2x/tiktok-logo-tikok-icon-transparent-tikok-app-logo-free-png.png",
+    use_container_width=True
+)
 st.sidebar.title("TIKTOK VIEW")
 selection = st.sidebar.radio("Chọn mục:", list(menu.keys()))
 
