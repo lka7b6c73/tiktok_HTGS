@@ -21,6 +21,6 @@ filename = menu[selection]
 response = requests.get(f"{BACKEND_URL}/image/{filename}")
 
 if response.status_code == 200:
-    st.image(response.content, use_container_width=True)
+    st.image(response.content, width=1200)
 else:
     st.error(f"Không tải được ảnh: {response.status_code}")
