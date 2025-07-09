@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # Thay bằng URL ngrok backend của bạn
-BACKEND_URL = "https://a3d4033514b1.ngrok-free.app"
+BACKEND_URL = "https://c87126cd32d5.ngrok-free.app"
 
 menu = {
     "Trang chủ": "home.png",
