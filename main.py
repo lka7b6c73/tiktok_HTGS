@@ -19,7 +19,13 @@ filename = menu[selection]
 
 # Gọi API
 response = requests.get(f"{BACKEND_URL}/image/{filename}")
+time_resp = requests.get(f"{BACKEND_URL}/time")
 
+if time_resp.status_code == 200:
+    capture_time = time_resp.json().get("capture_time", "N/A")
+    st.caption(f"📸 Capture at: {capture_time}")
+else:
+    st.caption("📸 Capture time: N/A")
 if response.status_code == 200:
     st.image(response.content, width=2000)
 else:
