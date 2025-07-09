@@ -19,7 +19,7 @@ st.set_page_config(
 
 st.sidebar.markdown(f"""
 <div style="display: flex; align-items: center; gap: 10px;">
-    <img src="https://static.vecteezy.com/system/resources/previews/018/930/574/non_2x/tiktok-logo-tikok-icon-transparent-tikok-app-logo-free-png.png" width="30">
+    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHRxeWViOTlsNWk2emI1YnN4amRyZGMxbnVvaXkzNG01ZmVqbXdvMiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/jS2pgTIhhTuAqneaF0/giphy.webp" width="30">
     <h3 style="margin:0;">TIKTOK VIEW</h3>
 </div>
 """, unsafe_allow_html=True)
