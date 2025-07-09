@@ -10,9 +10,9 @@ menu = {
     "Kho dữ liệu Tiktok": "feeds.png"
 }
 
-st.set_page_config(page_title="Dashboard", layout="wide")
+st.set_page_config(page_title="TikTok_V486", layout="wide")
 
-st.sidebar.title("Dashboard")
+st.sidebar.title("TIKTOK VIEW")
 selection = st.sidebar.radio("Chọn mục:", list(menu.keys()))
 
 filename = menu[selection]
